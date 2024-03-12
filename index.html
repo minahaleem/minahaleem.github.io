@@ -1,1 +1,31 @@
-Welcome to Mina Haleem Blog
+---
+layout: default
+title: Mina Haleem's Blog
+---
+
+<div class="home">
+    <h1>Welcome to My Blog</h1>
+    <p>Hello! I'm <strong>Mina Haleem</strong>, a CTO and founder of several startups with a deep passion for exploring technical matters. With years of experience in the tech industry, I've gathered a wealth of knowledge and insights that I'm eager to share with you.</p>
+    
+    <h2>Latest Posts</h2>
+    <ul>
+      {% for post in site.posts limit:5 %}
+        <li>
+          <a href="{{ post.url }}">{{ post.title }}</a>
+          <span>- {{ post.date | date: "%B %d, %Y" }}</span>
+        </li>
+      {% endfor %}
+    </ul>
+    
+    <p><a href="/blog">Explore all posts</a></p>
+
+    <h2>About Me</h2>
+    <p>As a CTO and entrepreneur, I've faced the challenges of scaling technology and teams firsthand. I believe in sharing knowledge and experiences to help others navigate these challenges successfully.</p>
+    
+    <p><a href="/about">Learn more about me</a></p>
+
+    <h2>Contact</h2>
+    <p>Interested in discussing technology or potential collaborations? Let's connect!</p>
+    
+    <p><a href="/contact">Contact me</a></p>
+</div>
