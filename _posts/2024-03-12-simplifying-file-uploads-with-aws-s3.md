@@ -8,7 +8,7 @@ categories: [development, AWS, tutorial]
 In today's digital age, efficient file handling and storage are critical for many web applications. One common use case is uploading user-generated content, such as photos for an album. This process typically involves sending files from the client-side (frontend) to a server (backend), and eventually storing them in a persistent storage system. Leveraging Amazon Web Services (AWS) S3, Lambda functions, and a backend server, we can create a streamlined, secure, and scalable solution for this task. This article explores this architecture, detailing its workflow, benefits, and considerations.
 
 ### The Workflow
-![Upload Workflow](/images/upload-workflow.png)
+![Upload Workflow](/images/upload-workflow.jpg)
 
 1. **Frontend Request**: The process begins when the frontend of the application requests the backend to upload a file. This could be triggered by a user action, such as selecting a photo to add to an album.
 
